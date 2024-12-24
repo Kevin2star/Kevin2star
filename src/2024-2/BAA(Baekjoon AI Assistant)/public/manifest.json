@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "BAA",
+  "description":"백준 문제풀이에 ChatGPT의 도움을 받을 수 있습니다.",
+  "version": "1.0",
+  "permissions": ["sidePanel","storage","scripting","activeTab","tabs"],
+  "host_permissions": ["https://www.acmicpc.net/*"],
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_title": "프로그래밍 언어 설정"
+  },
+  "background" : {
+    "service_worker" : "./background/background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "./Images/Logo.png",
+    "32": "./Images/Logo.png",
+    "48": "./Images/Logo.png",
+    "128": "./Images/Logo.png"
+  },
+  "content_scripts":[
+    {
+      "matches": ["https://www.acmicpc.net/*"],
+      "js":["./contents/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["functions/AiFB.js", "functions/setting&functions.js","functions/RemoveAds.js","functions/Timer.js","functions/stackOF.js"],
+      "matches": ["https://www.acmicpc.net/*"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "./sidepanel.html",
+    "js":["./sidepanels_js/OQ.js"]
+    
+  }
+}
+
+  
+  

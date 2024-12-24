@@ -1,0 +1,58 @@
+<!DOCTYPE html>  <!--개념설명-->
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="../css/Loding.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/SP_style.css" />
+
+  </head>
+
+  <body>
+    <div class="loading" id="loading">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class = "title">
+      <img class="GPTIMG"src="../Images/GPT_Logo.jpg" alt="GPT logo"  width="30" height = "30" maxlength="100"/>
+      <h1>ChatGPT가 생성한 설명</h1>
+    </div>
+
+    <div class="content" id="content">
+      <div id="output">
+         
+      </div>
+
+    </div>
+    
+
+    <ul class="menu">
+      <li>
+        <button id="toggleButton" class="reportimg">
+          <img src="https://www.svgrepo.com/show/152241/exclamation-mark-inside-a-circle.svg" alt="!" style="width: 30px; height: 30px;">
+        </button>
+        <ul class="submenu1">
+          <li><a href="#1" class="AnswerError"><strong>응답에 오류가 있어요</strong></a></li>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </ul>
+        <ul class="submenu2">
+          <li><a href="#2" class="OtherError"><strong>기타 오류 사항 제보</strong></a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div id="feedbackmsg" class="feedbackmsg"> </div>
+
+    <link rel="stylesheet" href="../functions/github-dark.min.css">
+    <script src="../functions/highlight.min.js"></script>    
+    <script src="../sidepanels_js/IH.js" type="module"></script>
+  </body>
+</html>

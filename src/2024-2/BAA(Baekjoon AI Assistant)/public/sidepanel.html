@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id = "CSS" rel="stylesheet" href="./css/Loding.css" />
+    <link rel="stylesheet" href="./css/SP_style.css" />
+  </head>
+
+  <body>
+    <div class="loading" id="loading">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class = "title">
+      <img class="GPTIMG"src="./Images/GPT_Logo.jpg" alt="GPT logo"  width="30" height = "30"/>
+      <h1>질문을 입력하세요</h1>
+    </div>
+    
+    <div class="chatbox" id="chatbox"></div>
+    
+    <div class="content" id="content">
+
+      <textarea id = "Text" placeholder= "Send a message" rows="1" cols="30" maxlength="1000"></textarea>
+      <button id = "Send">
+        <img src="./Images/SendBtn.svg" alt="->">
+      </button>
+    </div>
+     
+    <link rel="stylesheet" href="./css/github-dark.min.css">
+    <script src="./functions/highlight.min.js"></script>  
+    <script src="./sidepanels_js/OQ.js" type="module"></script>  
+  </body>
+</html>
